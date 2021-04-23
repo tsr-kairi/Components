@@ -1,14 +1,142 @@
-*/::after/::before {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 body {
-  width: 100%;
-  height: 100vh;
-  background-color: skyblue;
-  justify-content: center;
+  background-color: #eff2f8;
+  font-family: "Poppins", sans-serif;
+  display: -Share something awesomewebkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+}
+
+.circle {
+  width: 450px;
+  height: 450px;
+  background-color: #9677ef;
+  border-radius: 500px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card {
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  padding: 35px;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fa-times {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #9677ef;
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+  -webkit-transition: all 330ms ease-out;
+  transition: all 330ms ease-out;
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.card .form-control {
+  width: 100%;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.form-control input {
+  font-size: 14px;
+  max-width: 100%;
+  width: 80%;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid rgba(114, 67, 245, 0.7);
+}
+
+.form-control input:hover {
+  outline: none;
+  border: 1px solid rgba(114, 67, 245, 0.5);
+}
+
+.form-control input:focus {
+  outline: none;
+  border: 1px solid #7243f5;
+}
+
+.form-control button {
+  padding: 11px 30px;
+  background-color: #9677ef;
+  border: none;
+  margin-left: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+.form-control button:hover {
+  background-color: #7243f5;
+  border: none;
+  -webkit-transition: all 330ms ease-out;
+  transition: all 330ms ease-out;
+  cursor: pointer;
+}
+
+.card-footer {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #f8f9fd;
+  padding: 15px 15px;
+  margin-top: 10px;
+}
+
+.card-footer h6 {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.card-footer p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.card-footer a {
+  color: #7243f5;
 }
