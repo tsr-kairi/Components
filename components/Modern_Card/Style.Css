@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F5F8FF;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin: auto;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 330ms ease-out;
+  transition: all 330ms ease-out;
+  cursor: pointer;
+}
+
+span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #ac2f2f;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+span i {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  color: dodgerblue;
+  font-size: 26px;
+}
+
+span i:hover {
+  color: #0884ff;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card-img {
+  width: 350px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-body {
+  padding: 15px 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;color-adjust;
+          justify-content: space-between;
+}
+
+.card-body h3 {
+  font-size: 16px;
+  margin: 10px 5px;
+}
+
+.card-body small {
+  font-size: 13px;
+  margin: 10px 5px;
+}
+
+.card:hover .cb button {
+  opacity: 1;
+  -webkit-transition: all 330ms ease-out;
+  transition: all 330ms ease-out;
+}
+
+.cb button {
+  padding: 13px 20px;
+  outline: none;
+  background-color: dodgerblue;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  opacity: 0;
+}
+
+.cb button:hover {
+  background-color: #0884ff;
+  cursor: pointer;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+@media (max-width: 1372px) {
+  .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1073px) {
+  .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 775px) {
+  .container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
